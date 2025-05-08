@@ -298,7 +298,7 @@ def token_required(f):
 # Routes
 @app.route('/catalog-api/health', methods=['GET'])
 def health_check():
-    return jsonify({'status': 'healthy', 'service': 'client-service'}), 200
+    return jsonify({'status': 'healthy', 'service': 'product-catalog-service'}), 200
 
 @app.route('/catalog-api/products', methods=['GET'])
 def get_products():
